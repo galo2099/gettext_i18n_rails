@@ -3,7 +3,7 @@ I18n::Config # autoload
 module I18n
   class Config
     def locale
-      FastGettext.locale.gsub("_","-").to_sym
+      FastGettext.locale.to_sym
     end
 
      def locale=(new_locale)
